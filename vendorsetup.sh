@@ -5,6 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_redwood-user
-add_lunch_combo omni_redwood-userdebug
-add_lunch_combo omni_redwood-eng
+export ALLOW_MISSING_DEPENDENCIES=true

@@ -7,10 +7,7 @@
 
 DEVICE_PATH := device/xiaomi/redwood
 
-# For building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
-
-# A/B
+# A/B device 
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     system \
@@ -18,7 +15,6 @@ AB_OTA_PARTITIONS += \
     product \
     vendor \
     odm
-BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -26,12 +22,15 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := kryo670
-
+##########
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a78
+
+# SDK
+BOARD_SYSTEMSDK_VERSIONS := 31
 
 # Apps
 TARGET_SUPPORTS_64_BIT_APPS  := false
